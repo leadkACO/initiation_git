@@ -42,7 +42,31 @@ facto
 facto <- factWhile(1000)
 facto  
   
-  
-  
-  
+
+system.time({
+  x <- factFor(1000)
+  x
+})
+
+
+# comparer les résultats 
+
+compareFact(n, type="for"){
+  if(type=="for"){
+    res = factFor(n)
+  }
+  else if(type == "while"){
+    res = factWhile(n)
+  }
+  else{
+    stop("type must be 'for' or 'while'")
+  }
+}
+
+
+# import des datas ! 
+
+data <- read.table("https://raw.githubusercontent.com/wiki/arunsrinivasan/flights/NYCflights14/flights14.csv", sep=",")
+
+data
   

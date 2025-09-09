@@ -166,4 +166,9 @@ max_coef[217,]
 
 
 max(itinary_stats$sd, na.rm = TRUE)
+
+
+
+
+
                    
